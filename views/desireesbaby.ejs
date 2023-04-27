@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FYS-Sample Desiree's Baby</title>
+</head>
+<body style="height: 100vh;">
+    <canvas id="canvas" class="absolute"></canvas>
+    <div class="w-full h-full flex flex-row">
+        <div class="w-fit h-full flex justify-start items-center">
+            <img src="/imgs/desireesbaby.jpg" alt="" class="ml-2 h-[700px] rounded drop-shadow-lg">
+        </div>
+        <div class="w-full h-full flex flex-col">
+            <div class="w-full h-fit flex justify-center items-center flex-col p-4 ml-2">
+                <h1 class="font-bold text-2xl">Désirée's Baby</h1>
+                <h1 class="text-base">Kate Chopin</h1>
+            </div>
+            <div class="w-[95%] ml-6 h-fit flex justify-start flex-col px-4 bg-green-400 rounded-lg py-2 drop-shadow-lg">
+                <h1 class="font-bold text-base">About</h1>
+                <p>
+                    "Desiree's Baby" is a short story by Kate Chopin, first published in 1893. The story takes place in Louisiana before the Civil War and tells the story of Desiree, a young woman who is abandoned as a baby and is taken in and raised by Madame Valmonde. Desiree later falls in love with and marries a wealthy plantation owner named Armand Aubigny. They have a baby together, but soon after the child is born, Armand begins to notice that the baby's skin is getting darker, leading him to suspect that Desiree has black ancestry. Despite Desiree's protestations, Armand becomes increasingly cruel and distant towards her and the baby, ultimately disowning them both and burning all of their belongings. In a shocking twist ending, it is revealed that it is Armand, not Desiree, who has black ancestry, and that he has been living in denial of his own heritage. The story is often read as a commentary on race, gender, and the legacy of slavery in America, and has been praised for its powerful critique of the racism and discrimination faced by black people in the South.
+                </p>
+            </div>
+            <div class="w-[95%] ml-6 h-fit flex justify-start flex-col px-4 bg-sky-400 rounded-lg py-2 drop-shadow-lg mt-4">
+                <h1 class="font-bold text-base">Central Themes</h1>
+                <p>
+                    [Slavery and Racism] [Intersection of Classism, Racism, and Sexism] [Love and Blindness] [Irony] [Misjudgement] [Fate]
+                </p>
+            </div>
+            <div class="w-[95%] ml-6 h-fit flex justify-start flex-col px-4 bg-purple-400 rounded-lg py-2 drop-shadow-lg mt-4">
+                <h1 class="font-bold text-base">Important Characters</h1>
+                <p>
+                    [Madame Valmondé] [Désirée] [Armand] [Baby] [La Blanche] [Madame Aubigny]
+                </p>
+            </div>
+            <div class="justify-end flex w-full h-full">
+                <a href="/" class="px-2 py-1 border-blue-600 border-4 hover:bg-blue-600 w-fit h-fit rounded mr-[30px] mt-4 relative">Home</a>
+            </div>
+            <%- include("__trivia.ejs") %>
+        </div>
+    </div>
+    <script src="/js/home.js"></script>
+    <script src="/js/trivia.js"></script>
+
+</body>
+</html>

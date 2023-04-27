@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FYS-Sample Old Woman Magoun</title>
+</head>
+<body style="height: 100vh;">
+    <canvas id="canvas" class="absolute"></canvas>
+    <div class="w-full h-full flex flex-row">
+        <div class="w-fit h-full flex justify-start items-center">
+            <img src="/imgs/magoun.jpg" alt="" class="w-[600px] ml-2 rounded drop-shadow-lg">
+        </div>
+        <div class="w-full h-full flex flex-col">
+            <div class="w-full h-fit flex justify-center items-center flex-col p-4 ml-2">
+                <h1 class="font-bold text-2xl">Old Woman Magoun</h1>
+                <h1 class="text-base">Marry E. Wilkins Freeman</h1>
+            </div>
+            <div class="w-[95%] ml-6 h-fit flex justify-start flex-col px-4 bg-green-400 rounded-lg py-2 drop-shadow-lg">
+                <h1 class="font-bold text-base">About</h1>
+                <p>
+                    "Old Woman Magoun" is a short story by Mary E. Wilkins Freeman, first published in 1901. The story takes place in a small New England town and tells the story of Old Woman Magoun, an elderly woman who makes a living by selling homemade candy. Old Woman Magoun lives with her granddaughter Lily, whom she has raised since Lily was a baby. Lily is now a young woman and has fallen in love with a man named Jim, who works at the local factory. Old Woman Magoun disapproves of the match and tries to prevent Lily from seeing Jim, believing that he is not good enough for her. When Lily insists on seeing Jim anyway, Old Woman Magoun becomes increasingly paranoid and fearful, convinced that something terrible will happen if Lily continues to see him. In a tragic ending, Old Woman Magoun accidentally poisons herself with arsenic while trying to prevent Lily from seeing Jim. The story is often read as a commentary on the strict social norms and gender roles of the time, as well as a critique of the isolation and loneliness faced by many elderly women in small towns.
+                </p>
+            </div>
+            <div class="w-[95%] ml-6 h-fit flex justify-start flex-col px-4 bg-sky-400 rounded-lg py-2 drop-shadow-lg mt-4">
+                <h1 class="font-bold text-base">Central Themes</h1>
+                <p>
+                    [Isolation] [Gender Roles] [Fear] [Paranoia] [Tragedy]
+                </p>
+            </div>
+            <div class="w-[95%] ml-6 h-fit flex justify-start flex-col px-4 bg-purple-400 rounded-lg py-2 drop-shadow-lg mt-4">
+                <h1 class="font-bold text-base">Important Characters</h1>
+                <p>
+                    [Old Woman Magoun] [Lily] [Jim]
+                </p>
+            </div>
+            <div class="justify-end flex w-full h-full">
+                <a href="/" class="px-2 py-1 border-blue-600 border-4 hover:bg-blue-600 w-fit h-fit rounded mr-[26px] mt-4 relative">Home</a>
+            </div>
+            <%- include("__trivia.ejs") %>
+
+        </div>
+    </div>
+    <script src="/js/home.js"></script>
+    <script src="/js/trivia.js"></script>
+
+</body>
+</html>

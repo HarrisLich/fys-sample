@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FYS-Sample The Yellow Wallpaper</title>
+</head>
+<body style="height: 100vh;">
+    <canvas id="canvas" class="absolute"></canvas>
+    <canvas class="absolute" id="canvas"></canvas>
+    <div class="w-full h-full flex flex-row">
+        <div class="w-fit h-full flex justify-start items-center">
+            <img src="/imgs/yellowwallpaper.jpg" alt="" class="w-[100%] ml-2 rounded drop-shadow-lg">
+        </div>
+        <div class="w-full h-full flex flex-col">
+            <div class="w-full h-fit flex justify-center items-center flex-col p-4 ml-2">
+                <h1 class="font-bold text-2xl">The Yellow Wallpaper</h1>
+                <h1 class="text-base">Charlotte Perkins Gilman</h1>
+            </div>
+            <div class="w-[95%] ml-6 h-fit flex justify-start flex-col px-4 bg-green-400 rounded-lg py-2 drop-shadow-lg">
+                <h1 class="font-bold text-base">About</h1>
+                <p>
+                    "The Yellow Wallpaper" is a short story by Charlotte Perkins Gilman, first published in 1892. The story is written in the form of a journal and tells the story of a woman who is suffering from what is then called "nervous depression" or postpartum depression, and is prescribed a rest cure by her physician husband. The woman is confined to a room with yellow wallpaper, which she becomes obsessed with, and begins to see strange shapes and figures in the pattern. As the woman's condition deteriorates, she becomes convinced that there is a woman trapped inside the wallpaper, and begins to hallucinate about freeing her. The story is often read as a commentary on the treatment of women's mental health in the late nineteenth century, as well as a critique of the restrictive gender roles and patriarchal society of the time. It is considered a landmark feminist text and has become a classic of American literature.
+                </p>
+            </div>
+            <div class="w-[95%] ml-6 h-fit flex justify-start flex-col px-4 bg-sky-400 rounded-lg py-2 drop-shadow-lg mt-4">
+                <h1 class="font-bold text-base">Central Themes</h1>
+                <p>
+                    [The Subordination of Women in Marriage] [The Importance of Self-Expression] [The Evils of the “Resting Cure”] [Gaslighting] [Oppressive Relationships]
+                </p>
+            </div>
+            <div class="w-[95%] ml-6 h-fit flex justify-start flex-col px-4 bg-purple-400 rounded-lg py-2 drop-shadow-lg mt-4">
+                <h1 class="font-bold text-base">Important Characters</h1>
+                <p>
+                    [The Narrator] [John] [Jennie]
+                </p>
+            </div>
+            <div class="justify-end flex w-full h-full">
+                <a href="/" class="px-2 py-1 border-blue-600 border-4 hover:bg-blue-600 w-fit h-fit rounded mr-[34px] mt-4 relative">Home</a>
+            </div>
+            <%- include("__trivia.ejs") %>
+
+        </div>
+    </div>
+    <script src="/js/home.js"></script>
+    <script src="/js/trivia.js"></script>
+
+</body>
+</html>

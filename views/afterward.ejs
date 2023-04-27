@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FYS-Sample Afterward</title>
+</head>
+<body style="height: 100vh;">
+    <canvas id="canvas" class="absolute"></canvas>
+
+    <div class="w-full h-full flex flex-row">
+        <div class="w-fit h-full flex justify-start items-center">
+            <img src="/imgs/afterward.jpg" alt="" class="w-[500px] ml-2 rounded drop-shadow-lg">
+        </div>
+        <div class="w-full h-full flex flex-col">
+            <div class="w-full h-fit flex justify-center items-center flex-col p-4 ml-2">
+                <h1 class="font-bold text-2xl">Afterward</h1>
+                <h1 class="text-base">Edith Wharton</h1>
+            </div>
+            <div class="w-[95%] ml-6 h-fit flex justify-start flex-col px-4 bg-green-400 rounded-lg py-2 drop-shadow-lg">
+                <h1 class="font-bold text-base">About</h1>
+                <p>
+                    "Afterward" is a short story by American author Edith Wharton, first published in 1910. The story is about a couple, Mary and Ned Boyne, who buy a house in the countryside outside of New York City. The house has a mysterious past, with rumors of a hidden room and a tragedy that took place years before. The Boyne's dismiss these rumors as superstition, but they soon begin to experience strange occurrences and eerie events, which seem to be connected to the house's past. In the end, it is revealed that the ghostly occurrences were not supernatural, but the result of a living person's scheme to trick the Boyne's out of their money. The story is often read as a commentary on the greed and deception that can exist in society, and the ways in which our beliefs and assumptions can be manipulated.
+                </p>
+            </div>
+            <div class="w-[95%] ml-6 h-fit flex justify-start flex-col px-4 bg-sky-400 rounded-lg py-2 drop-shadow-lg mt-4">
+                <h1 class="font-bold text-base">Central Themes</h1>
+                <p>
+                    [Deception] [Manipulation] [Superstition] [Belief] [Wealth and Social Status] [Nature of Reality]
+                </p>
+            </div>
+            <div class="w-[95%] ml-6 h-fit flex justify-start flex-col px-4 bg-purple-400 rounded-lg py-2 drop-shadow-lg mt-4">
+                <h1 class="font-bold text-base">Important Characters</h1>
+                <p>
+                    [Mary Boyne] [Ned Boyne] [Boyne Servants] [Previous House Owners]
+                </p>
+            </div>
+            <div class="justify-end flex w-full h-full">
+                <a href="/" class="px-2 py-1 border-blue-600 border-4 hover:bg-blue-600 w-fit h-fit rounded mr-[28px] mt-4 relative">Home</a>
+            </div>
+            <%- include("__trivia.ejs") %>
+
+        </div>
+    </div>
+    <script src="/js/home.js"></script>
+    <script src="/js/trivia.js"></script>
+
+</body>
+</html>

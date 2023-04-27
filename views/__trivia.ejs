@@ -1,0 +1,26 @@
+<div class="w-full h-full flex flex-col ml-6">
+    <div class="justify-start flex w-fit h-fit flex-row">
+        <h1>Trivia: </h1>
+        <h1 id="question">
+            <%= QNA.question %>
+        </h1>
+    </div>
+    <div class="flex flex-row w-full">
+        <h1>
+            Answer:
+            <input type="text" id="answer" value="" class="border rounded relative"></input>
+        </h1>
+        <div class="flex flex-row hidden" id="answerContainer">
+            <h1 class="ml-2">Correct Answer: </h1>
+            <h1 class="ml-2" id="correctAnswer">
+                <%= QNA.answer %>
+            </h1>
+        </div>
+    </div>
+    <div class="flex flex-row">
+        <button class="rounded bg-green-500 hover:bg-green-400 px-2 py-1 relative mt-2"
+            id="submitButton">Submit</button>
+        <h1 class="absolute text-green-500 font-bold ml-[80px] mt-3 hidden" id="correct">Correct</h1>
+        <h1 class="absolute text-red-500 font-bold ml-[80px] mt-3 hidden" id="wrong">Incorrect</h1>
+    </div>
+</div>
